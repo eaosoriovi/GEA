@@ -103,7 +103,7 @@ header {
 .hero h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 600; 
     color: #007c85;
     background-color: #ffffffa9;
     border: 2px solid;
