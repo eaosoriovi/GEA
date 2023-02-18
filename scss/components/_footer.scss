@@ -1,0 +1,115 @@
+footer {
+    width: 100%;
+    padding: 20px 0px;
+    background-image: url(../assets/background-footer.svg);
+    background-size: cover;
+
+    .container__fot {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 20px;
+
+        .box__footer {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            font-family: $font-text;
+            font-size: 16px;
+            letter-spacing: 0.2px;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                font-family: $font-main;
+                letter-spacing: 0.2px;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 8px;
+                color: $color-white;
+                border-bottom: 2px solid $color-white;
+            }
+
+            .fa-brands {
+                padding: 8px;
+                font-size: 26px;
+                color: $color-white;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            .fot-item {
+                margin-top: 10px;
+                color: $color-white;
+            }
+
+            .nav-footer {
+                & a:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            form {
+                margin: 8px 8px;
+
+                input {
+                    text-align: center;
+                    font-family: $font-text;
+                    font-size: 14px;
+                    width: 200px;
+                    height: 40px;
+                    border: none;
+                    border-radius: 20px;
+                    background-color: $color-white;
+
+                    &:focus {
+                        background-color: #df9816;
+                    }
+                }
+
+                button {
+                    background-color: transparent;
+                    color: $color-white;
+                    font-size: 14px;
+                    border: 2px solid $color-white;
+                    border-radius: 20px;
+                    height: 40px;
+                    width: 40px;
+                    margin-left: 2px;
+
+                    &:hover {
+                        color: #000000;
+                        border: 2px solid #000000b4;
+                    }
+                }
+            }
+        }
+    }
+
+    .box__copyright {
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px;
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: $color-white;
+        }
+
+        p {
+            font-family: $font-text;
+            font-size: 14px;
+            letter-spacing: 0.2px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            color: $color-white;
+        }
+    }
+}

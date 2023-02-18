@@ -5,7 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descripción de la página -->
+    <meta name="description"
+        content="Gea es un centro de desarrollo para niños, niñas y adolescentes con un modelo educativo propio que permite fomentar una educación integral equilibrada y una crianza respetuosa.">
+    <!-- Palabras clave -->
+    <meta name="keywords"
+        content="Montessori, Meditación, Yoga, Crianza consciente, Conexión espiritual, Desarrollo académico, Adolescentes conscientes, Educación integral, Crianza respetuosa">
+
+    <!-- Primary Meta Tags -->
+    <title>GEA, Centro para el desarrollo</title>
+    <meta name="title" content="GEA, Centro para el desarrollo">
+    <meta name="description"
+        content="Gea es un centro de desarrollo para niños, niñas y adolescentes con un modelo educativo propio que permite fomentar una educación integral equilibrada y una crianza respetuosa.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gea.vercel.app">
+    <meta property="og:title" content="GEA, Centro para el desarrollo">
+    <meta property="og:description"
+        content="Gea es un centro de desarrollo para niños, niñas y adolescentes con un modelo educativo propio que permite fomentar una educación integral equilibrada y una crianza respetuosa.">
+    <meta property="og:image" content="./assets/Portada-page.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gea.vercel.app">
+    <meta property="twitter:title" content="GEA, Centro para el desarrollo">
+    <meta property="twitter:description"
+        content="Gea es un centro de desarrollo para niños, niñas y adolescentes con un modelo educativo propio que permite fomentar una educación integral equilibrada y una crianza respetuosa.">
+    <meta property="twitter:image" content="./assets/Portada-page.jpg">
+
     <link rel="shortcut icon" href="../assets/Logo.png" type="image/x-icon">
+    <!-- Link de scrip de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Servicios - GEA</title>
@@ -15,24 +47,108 @@
 
     <!--Menú de navegación-->
     <header class="header" id="header">
-        <a class="indx__logo" href="../index.html"><img src="../assets/Logo.png" alt="Logo"></a>
-        <button class="open__menu" id="open__menu"><i class="fa-sharp fa-solid fa-bars"></i></button>
-        <div class="back__menu" id="back__menu"></div>
-        <nav class="nav-menu" id="nav-menu">
-            <button class="close__menu" id="close__menu"><i class="fa-sharp fa-solid fa-xmark"></i></button>
-            <ul class="nav-list" id="nav-list">
-                <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="./nosotros.html" class="nav-link">Nosotros</a></li>
-                <li class="nav-item"><a href="./nuestroequipo.html" class="nav-link">Nuestro equipo</a></li>
-                <li class="nav-item active"><a href="./servicios.html" class="nav-link">Servicios</a></li>
-                <li class="nav-item"><a href="./contactanos.html" class="nav-link">Contáctanos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+                <a href="../index.html"><img src="../assets/Logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú de navegación</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nuestroequipo.html">Nuestro equipo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contactanos.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!--Contenido principal-->
 
     <main class="main__services" id="main__services">
+
+        <section class="inf__services">
+            <div class="serv__tit">
+                <h1>Servicios</h1>
+            </div>
+
+            <div class="serv__cont">
+                <div class="serv_card">
+                    <p>Definición de precio: El costo al ingresar al centro de desarrollo estaría relacionado de la
+                        siguiente manera: El valor del servicio estará determinado por matricula (pago anual) y pensión
+                        (mensual).</p>
+                    <p>Teniendo en cuenta la evaluación de competidores y la propuesta de valor, se generan los precios
+                        conforme el requerimiento de personal y recursos para el proceso educativo de los estudiantes:
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="../assets/Card-Serv1.jpg" class="card-img-top" alt="Niños de 4 a 8 años">
+                    <div class="card-body">
+                        <h2 class="card-title">Cursos educación básica de 4 a 8 años</h2>
+                        <p class="card-text">Matricula: 2.000.000 COP</p>
+                        <p>Pensión: 800.000 COP</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Información actualizada para el 2023</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/Card-Serv2.jpg" class="card-img-top" alt="Niños de 9 a 12 años">
+                    <div class="card-body">
+                        <h2 class="card-title">Cursos de educación medía baja de 9 a 12 años</h2>
+                        <p class="card-text">Matricula: 1.800.000 COP</p>
+                        <p>Pensión: 700.000 COP</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Información actualizada para el 2023</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/Card-Serv3.jpg" class="card-img-top" alt="Niños de 13 a 16 años">
+                    <div class="card-body">
+                        <h2 class="card-title">Cursos de educación media alta de 13 a 16 años</h2>
+                        <p class="card-text">Matricula: 1.750.000 COP</p>
+                        <p>Pensión: 650.000 COP</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Información actualizada para el 2023</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="serv__cont">
+                <div class="serv_card">
+                    <h3>Con alimentación y transporte opcional:</h3>
+                    <p>Con un valor de 550.000 COP</p>
+                </div>
+            </div>
+
+        </section>
+
     </main>
 
     <!--Pie de página-->
@@ -73,10 +189,14 @@
 
     </footer>
 
+    <!-- Link de scrip de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
     <!-- Link de script de FontAwesome -->
     <script src="https://kit.fontawesome.com/3e15865f1c.js" crossorigin="anonymous"></script>
 
-    <script src="../js/script.js"></script>
 
 </body>
 

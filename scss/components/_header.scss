@@ -1,0 +1,67 @@
+header {
+    .navbar {
+        padding: 15px;
+
+        h5 {
+            font-family: $font-main;
+            font-size: 600;
+        }
+
+        .navbar-nav {
+
+            .nav-item {
+                position: relative;
+                font-family: $font-main;
+                font-size: 16px;
+                font-weight: 600;
+                color: $color-black;
+                padding: 10px;
+
+                &::after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    content: '';
+                    background-color: $color-main;
+                    width: 0%;
+                    height: 3px;
+                    margin: 0 auto;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    transition: .4s;
+                }
+
+                a {
+                    &.active {
+                        color: $color-main;
+                    }
+
+                    &:hover {
+                        color: $color-main;
+                    }
+                }
+            }
+        }
+
+        .container-fluid {
+            justify-content: space-around;
+
+            img {
+                max-width: 6.5rem;
+            }
+
+            .navbar-toggler {
+                border: none;
+                color: $color-black;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+        }
+    }
+}

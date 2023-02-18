@@ -1,0 +1,45 @@
+// Archivo Narrow | 'Archivo Narrow'
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600&display=swap');
+
+// Poppins | 'Poppins'
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+// 'Pacifico', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+// 'Viga', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+// 'Fredoka One', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+// Reseteo de estilos por default del html
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// css General
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+::selection {
+    background-color: #ffffff;
+    color: #ffa500;
+}

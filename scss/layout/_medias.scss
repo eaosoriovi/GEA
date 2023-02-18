@@ -1,0 +1,188 @@
+// Media query - Header
+
+@media only screen and (max-width:991px) {
+
+    header .navbar {
+        .container-fluid {
+            justify-content: space-around;
+
+            img {
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+
+// Media query - Index
+
+@media only screen and (min-width:320px) {
+
+    .main__indx {
+        .hero {
+            .hero__contenedor {
+                h1 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:480px) {
+
+    .main__indx {
+        .hero {
+            .hero__contenedor {
+                h1 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+
+    .main__indx {
+        .hero {
+            .hero__contenedor {
+                h1 {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1024px) {
+
+    .main__indx {
+        .hero {
+            .hero__contenedor {
+                h1 {
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1200px) {
+
+    .main__indx {
+        .hero {
+            .hero__contenedor {
+                h1 {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+
+    .main__indx {
+        .box__inf {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "videoi"
+                "modelo"
+                "enfoque";
+        }
+
+        .box__inf {
+            margin: 20px 20px;
+        }
+
+        .ratio {
+            min-height: 300px;
+        }
+    }
+}
+
+
+// Media query - Nosotros
+
+@media only screen and (max-width:440px) {
+
+    .main__nosotros {
+        .inf__nosotros {
+            p {
+                text-align: center;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+
+// Media query - Contáctanos
+
+@media (max-width: 1150px) {
+
+    .main__contact {
+        .box__cont {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "form"
+                "info"
+                "maps";
+        }
+
+        .contact {
+            padding: 30px;
+        }
+
+        .formBox {
+            .row50 {
+                display: flex;
+                gap: 0;
+                flex-direction: column;
+
+                .inputBox {
+                    width: 100%;
+                }
+            }
+        }
+
+        .maps {
+            min-height: 300px;
+            padding: 0;
+        }
+    }
+
+
+    @media only screen and (min-width: 320px) {
+
+        .main__contact {
+            .inputBox {
+                input {
+                    width: 100%;
+                }
+
+                textarea {
+                    height: 240px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+// Media query - Nuestro equipo
+
+@media only screen and (min-width:1024px) {
+
+    .equip__main {
+        .inf__card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
