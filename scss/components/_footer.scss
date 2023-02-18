@@ -31,15 +31,20 @@ footer {
                 color: $color-white;
                 border-bottom: 2px solid $color-white;
             }
-
-            .fa-brands {
+            
+            a {
                 padding: 8px;
-                font-size: 26px;
                 color: $color-white;
 
                 &:hover {
                     opacity: 0.5;
                 }
+            }
+
+            .fa-brands {
+                padding-right: 6px;
+                font-size: 26px;
+                color: $color-white;
             }
 
             .fot-item {
@@ -71,6 +76,11 @@ footer {
                     }
                 }
 
+                .fa-solid {
+                    padding-right: 4px;
+                }
+
+
                 button {
                     background-color: transparent;
                     color: $color-white;
@@ -78,12 +88,12 @@ footer {
                     border: 2px solid $color-white;
                     border-radius: 20px;
                     height: 40px;
-                    width: 40px;
+                    width: 70px;
                     margin-left: 2px;
 
                     &:hover {
-                        color: #000000;
-                        border: 2px solid #000000b4;
+                        color: #ffff00;
+                        border: 2px solid #ffff00;
                     }
                 }
             }

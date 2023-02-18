@@ -53,7 +53,8 @@ header .navbar {
   header .navbar .container-fluid {
     justify-content: space-around; }
     header .navbar .container-fluid img {
-      max-width: 6.5rem; }
+      width: 110px;
+      height: 100px; }
     header .navbar .container-fluid .navbar-toggler {
       border: none;
       color: #020202; }
@@ -89,12 +90,15 @@ footer {
         margin-bottom: 8px;
         color: #ffffff;
         border-bottom: 2px solid #ffffff; }
-      footer .container__fot .box__footer .fa-brands {
+      footer .container__fot .box__footer a {
         padding: 8px;
+        color: #ffffff; }
+        footer .container__fot .box__footer a:hover {
+          opacity: 0.5; }
+      footer .container__fot .box__footer .fa-brands {
+        padding-right: 6px;
         font-size: 26px;
         color: #ffffff; }
-        footer .container__fot .box__footer .fa-brands:hover {
-          opacity: 0.5; }
       footer .container__fot .box__footer .fot-item {
         margin-top: 10px;
         color: #ffffff; }
@@ -113,6 +117,8 @@ footer {
           background-color: #ffffff; }
           footer .container__fot .box__footer form input:focus {
             background-color: #df9816; }
+        footer .container__fot .box__footer form .fa-solid {
+          padding-right: 4px; }
         footer .container__fot .box__footer form button {
           background-color: transparent;
           color: #ffffff;
@@ -120,11 +126,11 @@ footer {
           border: 2px solid #ffffff;
           border-radius: 20px;
           height: 40px;
-          width: 40px;
+          width: 70px;
           margin-left: 2px; }
           footer .container__fot .box__footer form button:hover {
-            color: #000000;
-            border: 2px solid #000000b4; }
+            color: #ffff00;
+            border: 2px solid #ffff00; }
   footer .box__copyright {
     max-width: 1200px;
     margin: auto;
@@ -158,11 +164,6 @@ footer {
   line-height: 1.5em;
   text-align: center;
   margin-bottom: 0; }
-
-.main__indx .carousel-item img {
-  width: 100%;
-  height: 70vh;
-  object-fit: contain; }
 
 .main__indx .hero .hero__contenedor {
   display: flex;
@@ -575,23 +576,56 @@ footer {
 
 @media only screen and (min-width: 320px) {
   .main__indx .hero .hero__contenedor h1 {
-    font-size: 25px; } }
+    font-size: 25px; }
+  .main__indx .carousel-inner {
+    justify-content: center;
+    align-items: center; }
+    .main__indx .carousel-inner .carousel-item {
+      width: 100%;
+      height: 25vh; }
+    .main__indx .carousel-inner .d-block {
+      width: 100%;
+      height: 100%; } }
 
 @media only screen and (min-width: 480px) {
   .main__indx .hero .hero__contenedor h1 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .main__indx .carousel-inner .carousel-item {
+    width: 100%;
+    height: 30vh; }
+  .main__indx .carousel-inner .d-block {
+    width: 100%;
+    height: 100%; } }
 
 @media only screen and (min-width: 768px) {
   .main__indx .hero .hero__contenedor h1 {
-    font-size: 35px; } }
+    font-size: 35px; }
+  .main__indx .carousel-inner .carousel-item {
+    width: 100%;
+    height: 42vh; }
+  .main__indx .carousel-inner .d-block {
+    width: 100%;
+    height: 100%; } }
 
 @media only screen and (min-width: 1024px) {
   .main__indx .hero .hero__contenedor h1 {
-    font-size: 45px; } }
+    font-size: 45px; }
+  .main__indx .carousel-inner .carousel-item {
+    width: 100%;
+    height: 42vh; }
+  .main__indx .carousel-inner .d-block {
+    width: 100%;
+    height: 100%; } }
 
 @media only screen and (min-width: 1200px) {
   .main__indx .hero .hero__contenedor h1 {
-    font-size: 50px; } }
+    font-size: 50px; }
+  .main__indx .carousel-inner .carousel-item {
+    width: 100%;
+    height: 65vh; }
+  .main__indx .carousel-inner .d-block {
+    width: 100%;
+    height: 100%; } }
 
 @media (max-width: 1150px) {
   .main__indx .box__inf {
@@ -636,3 +670,7 @@ footer {
   .equip__main .inf__card {
     display: grid;
     grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (min-width: 320px) {
+  footer .container__fot .box__footer form input {
+    width: 180px; } }
